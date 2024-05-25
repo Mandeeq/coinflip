@@ -1,0 +1,38 @@
+<html>
+    <script>
+        //declaring variables
+        let coinflip = Math.floor(Math.random()*3)
+        let choice = prompt("Head and Tail")
+        let result;
+        //comparing the two flips
+       if(coinflip == 1){
+             result = "Head"
+        }
+        else{
+            result = "Tail"
+        }
+
+        //comparing choice and result
+        if (result == "Head") {
+    if (result == choice) 
+    {
+        alert("The flip was head and you chose head, you win");
+    } 
+    else
+     {
+        alert("The flip was head and you chose tail, you lose");
+    }
+}
+ else if (result == "Tail") 
+ {
+    if (result == choice)
+    {
+        alert("The flip was tail and you chose tail, you win");
+    } else 
+    {
+        alert("The flip was tail and you chose head, you lose");
+    }
+}
+
+    </script>
+</html>
